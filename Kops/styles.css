@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #eventsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event {
+    width: 100%;
+    max-width: 800;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+
+  @media screen and (min-width: 600px) {
+    .event {
+      width: 75%;
+      margin: 10px;
+    }
+  }
+  
+  .event h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .event p {
+    margin: 0;
+    color: #666;
+  }
+  
+  .pagination-container {
+    display: none;
+  }
+  
+  .pagination-container.visible {
+    display: flex;
+  }
+  
+  .pagination-container .button {
+    visibility: hidden;
+  }
+  
+  .pagination-container.visible .button {
+    visibility: visible;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pagination .previous-button {
+    justify-self: flex-start;
+  }
+  
+  .pagination .next-button {
+    justify-self: flex-end;
+  }
+
+
+  
+  
